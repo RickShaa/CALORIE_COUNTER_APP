@@ -169,7 +169,7 @@ const renderFoodData = () => {
         </div>
     <div class="sub-category">
         <h2>${servingSize} Servings</h2>
-        <p>${caloriesPerServing} Calories</p>
+        <p>${caloriesPerServing*servingSize} Calories</p>
     </div>
 </div>`;
 
