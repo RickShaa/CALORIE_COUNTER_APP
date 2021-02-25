@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+/* BASIC FORM STYLING*/
+/* BASIC FORM STYLING*/
+/* BASIC FORM STYLING*/
+/* BASIC FORM STYLING*/
+/* BASIC FORM STYLING*/
+/* BASIC FORM STYLING*/
+label {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #464646;
+  font-size: 2rem;
+  width: 95%;
+}
+
+input {
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.2rem;
+  color: #383838;
+  width: 95%;
+  height: 4rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #22b6f6;
+  background: #22b6f6;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.btn--passive {
+  color: black;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.btn--passive:hover,
+.btn--passive:active {
+  background: #22b6f6;
+  color: white;
+}
+
+.btn--success:hover,
+.btn--success:active {
+  background: #f3cc4b;
+  border-color: #f3cc4b;
+  color: #995200;
+}
+
+.modal .modal__actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* HEADER STYLING*/
+/* HEADER STYLING*/
+/* HEADER STYLING*/
+/* HEADER STYLING*/
+/* HEADER STYLING*/
+header {
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgb(94, 194, 161);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+header button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: #22b6f6;
+  border: 1px solid #22b6f6;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  display: none;
+}
+
+header button:hover,
+header button:active {
+  background: #f3cc4b;
+  border-color: #f3cc4b;
+  color: #995200;
+}
+
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ASKING FOR TOTAL CALORIE INPUT*/
+/* ASKING FOR TOTAL CALORIE INPUT*/
+/* ASKING FOR TOTAL CALORIE INPUT*/
+/* ASKING FOR TOTAL CALORIE INPUT*/
+/* ASKING FOR TOTAL CALORIE INPUT*/
+.input_text_greeting {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+}
+
+.input-calories {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-calories label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#total_calories_input {
+  width: 20rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.submit-calories {
+  border: none;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(94, 194, 161);
+  cursor: pointer;
+}
+
+.submit-calories:hover,
+.submit-calories:active {
+  background: #f3cc4b;
+  border-color: #f3cc4b;
+  color: #995200;
+}
+
+/* DISPLAY ENTERED TOTAL CALORIES*/
+/* DISPLAY ENTERED TOTAL CALORIES*/
+/* DISPLAY ENTERED TOTAL CALORIES*/
+/* DISPLAY ENTERED TOTAL CALORIES*/
+/* DISPLAY ENTERED TOTAL CALORIES*/
+/* DISPLAY ENTERED TOTAL CALORIES*/
+
+.display-calorie-input {
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.calorie-display {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.display-calorie-input h1 {
+  color: rgb(94, 194, 161);
+  font-size: 2rem;
+}
+
+.calorie-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #164052;
+}
+
+.remaining {
+  text-align: center;
+}
+.remaining h1 {
+  color: #f3cc4b;
+}
+
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+/* DISPLAY ADD FOOD MODAL */
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  top: 30vh;
+  left: 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.modal.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+.food-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.food-list {
+  list-style: none;
+  width: 40rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  padding: 0;
+}
+
+.food-list-item {
+  list-style: none;
+  width: 100%;
+  height: 7rem;
+  border-radius: 20px;
+  background-color: rgb(94, 194, 161);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+  margin-top: 1rem;
+}
+
+.food-list-content {
+  height: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.food-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  color: #164052;
+}
+
+.sub-category {
+  flex-grow: 1;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-category p {
+  font-size: 1.8rem;
+}

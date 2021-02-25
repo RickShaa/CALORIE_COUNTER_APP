@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Calorie Counter</title>
+</head>
+<body>
+
+    <div id="backdrop"></div>
+    <header>
+        <h1>CC</h1>
+        <button>ADD FOOD</button>
+    </header>
+
+
+    <div class="modal" id="add-food-modal">
+
+        <div class="modal-content">
+            <label for="food_name">Food Name</label>
+            <input type="text" name="food_name" id="food_name" />
+            <label for="servings">Servings per 100g</label>
+            <input type="number" name="servings" id="servings" />
+            <label for="calories">Calories per Serving</label>
+            <input type="number" name="calories" id="calories" />
+        </div>
+        <div class="modal__actions">
+            <button class="btn btn--passive">Cancel</button>
+            <button class="btn btn--success">Add</button>
+          </div>
+
+    </div>
+    
+    <main>
+        <div class="input_text_greeting" id="input_text">
+            <div class="input-calories">
+                <h1>Please Enter Total Calories Here:</h1>
+                <input
+                type="number"
+                max="4000"
+                min="1400"
+                name="total_calories_input"
+                id="total_calories_input">
+                <button class="submit-calories">ADD CALORIES</button>
+            </div>
+        </div>
+
+
+        <!--ENTER TOTAL CALORIES-->
+        <div class="display-calorie-input">
+        </div>
+
+        <!--DISPLAY FOOT ITEMS ADDED TO THE LIST-->
+        <div class="food-container">
+            <ul class="food-list" id="food-list">
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html> 
